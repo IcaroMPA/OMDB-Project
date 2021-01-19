@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80");
+  background-size: cover;
+  display: flex;
+}
+
+img {
+  height: 223px;
+}
+
+.height-and-width-100 {
+  height: 100%;
+  width: 100%;
+}
+
+.height-and-width-px {
+  padding: 60px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#aside {
+  width: 22vw;
+  height: 90vh;
+  margin: 5vh 2vw 5vh 2vw;
+}
+
+.text-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.layer {
+  background-color: rgba(114, 3, 46, 0.445);
+}
+.layer-main {
+  background-color: rgba(236, 179, 201, 0.705);
+}
+.layer-card {
+  background-color: rgba(117, 117, 117, 0.9);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-evenly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90%;
+  width: 80%;
+}
+
+.project-font {
+  text-shadow: 3px 3px 4px black;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+.pointer-aside {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.pointer-aside:hover {
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(252, 77, 77, 0.562);
+}
+.pointer {
+  cursor: pointer;
+}
+
+#title {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+#menu {
+  flex-grow: 4;
+  justify-content: space-evenly;
+}
+
+#about-me {
+  flex-grow: 4;
+  justify-content: flex-end;
+  margin-bottom: 5vh;
+}
+
+#main {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 96vh;
+  width: 72vw;
+  overflow-y: scroll;
+  margin: 2vh 0 2vh;
+}
+
+#posterDiv {
+  width: 150px;
+  margin: 2vh 1vw 0 1vw;
+}
+
+.posters {
+  cursor: pointer;
+  width: 100%;
+  border: solid 2px black;
+  position: relative;
+}
+
+.posters:hover {
+  border: solid 4px rgb(252, 42, 42);
+}
+
+#bigMediaPoster {
+  cursor: pointer;
+  height: 334px;
+  width: 225px;
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+.poster-title {
+  width: 100%;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(255, 208, 0);
+  font-size: large;
+  text-align: center;
+}
+
+.search-button {
+  font-size: 0.8em;
+  padding: 10px 15px;
+  background-color: #042037;
+  color: #fff;
+  border: none;
+}
+
+#searchForm {
+  height: 25vh;
+  width: 100%;
+  background-color: rgba(117, 117, 117, 0.9);
+}
+
+.short-margin-bottom {
+  margin-bottom: 10px;
+}
+
+.short-margin-left {
+  margin-left: 10px;
+}
+
+#searchInput {
+  font-size: 0.8em;
+  padding: 0.2em 0.4em;
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+#resultsSection {
+  height: 71vh;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.searched-posters {
+  flex-basis: 12%;
+}
+
+.arrow-div {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  align-self: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8vmin;
+  height: 8vmin;
+  background: transparent;
+  border-top: 2vmin solid #0d5997;
+  border-right: 2vmin solid #0d5997;
+  box-shadow: 0 0 0 lightgray;
+  transition: all 200ms ease;
+}
+
+.arrow-right {
+  left: 40px;
+  transform: rotate(45deg);
+}
+
+.arrow-left {
+  left: 50px;
+  transform: rotate(225deg);
+}
+
+.arrow:hover {
+  border-color: orange;
+  box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+.episode-poster {
+  background-color: rgba(236, 179, 201, 0.705);
+  object-fit: cover;
+  cursor: default;
+  height: 300px;
+  width: 600px;
+  margin: 0 1vw 1vh 1vw;
+}
+
+#selectDiv{
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.number-width{
+  width: 3em;
+}
+
+.series-plots-inputs{
+  height: 40px;
+  font-size: 0.8em;
+  padding: 0.2em 0.4em;
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 4px;
+}

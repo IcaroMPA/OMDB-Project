@@ -1,4 +1,4 @@
-const API_ENDPOINT = "http://www.omdbapi.com/";
+const API_ENDPOINT = "https://www.omdbapi.com/";
 const API_KEY = "&apikey=eec15bdc"
 
 async function getMediaById(imdbID) {

@@ -15,6 +15,7 @@ About me:
 
 Hi! My name is Ícaro Alves. I'm 33 years old, graduated in International Relations with 10 years of experiences in the Logistics business. After all that time, I grew tired of my daily routine and decided to search for a new professional beggining, having thus landed in programming!
 
-So far learning JavaScript has been a thrill! And I hope I can now expand to some Frameworks, such as React and Angular.
+So far learning JavaScript has been a thrill! And I hope I can now expand to some frameworks, such as React and Angular.
 
-My Linkedin page: https://www.linkedin.com/in/icaro-alves-b7a3a522/
+Thank you for visiting my page. Feel free to leave me a comment in my Linkedin page:
+https://www.linkedin.com/in/icaro-alves-b7a3a522/

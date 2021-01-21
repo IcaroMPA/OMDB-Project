@@ -6,7 +6,7 @@ function rootRenderer() {
     const aside = createChildElement("aside", "", root, "aside", "layer", "flex-column", "project-font");
     const divTitle = createChildElement("div", "", aside, "title", "flex-column");
     const home = createChildElement("h1", "", divTitle, "home", "pointer-aside");
-    home.innerHTML = `M.V.C.<br>Movies Very Cool`
+    home.innerHTML = `M.V.C.<br><span class="hide-tablet">Movies Very Cool</span>`
     const divMenu = createChildElement("div", "", aside, "menu", "flex-column");
     createChildElement("span", "Search Media by Title Name", divMenu, "search", "pointer-aside");
     createChildElement("span", "Search Series by Episode", divMenu, "series", "pointer-aside");
@@ -43,11 +43,11 @@ function mediaRenderer(movie) {
 }
 
 function createSearchBar(parentElement) {
-    const form = createChildElement("form", "", parentElement, "searchForm", "flex-column");
+    const form = createChildElement("form", "", parentElement, "searchForm", "flex-column", "form-movie");
     createChildElement("h2", "Search Movies, Series and Games by Title", form, "", "short-margin-bottom");
     const div = createChildElement("div", "", form, "", "flex", "short-margin-bottom");
     const input = createChildElement("input", "", div, "searchInput");
-    input.size = "41";
+    // input.size = "41";
     input.placeholder = `e.g. "Batman" or "Jaws"`;
     const select = createChildElement("select", "", div, "selectDiv", "short-margin-left");
     createChildElement("option", "All Medias", select, "all")
@@ -96,7 +96,7 @@ function createOptionsForm(parentElement) {
     const div = createChildElement("div", "", form, "", "flex-center", "short-margin-bottom");
     createChildElement("div", "Title: ", div, "", "text-align-center");
     const input = createChildElement("input", "", div, "titleInput", "short-margin-left", "series-plots-inputs");
-    input.size = "30";
+    // input.size = "30";
     input.placeholder = `e.g. "Breaking Bad" or "Lost"`;
     createChildElement("div", "Season: ", div, "", "short-margin-left");
     const seasonSelect = createChildElement("input", "", div, "seasonInput", "short-margin-left", "number-width", "series-plots-inputs");

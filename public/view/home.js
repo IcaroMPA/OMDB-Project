@@ -4,7 +4,6 @@ import { ROUTES } from "../routes.js"
 
 export default function (movies) {
   rootRenderer()
-  console.log(movies)
   movies.forEach(movie => {
     postsRenderer(movie, "main")
   })
@@ -12,6 +11,10 @@ export default function (movies) {
 
 window.addEventListener("click", (e) => {
   switch (e.target.id) {
+    case "menu":
+      e.preventDefault();
+      e.target.classList.toggle('is-active');
+      break
     case "home":
       e.preventDefault();
       goTo(ROUTES.HOME);

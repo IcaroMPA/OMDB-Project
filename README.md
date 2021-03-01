@@ -5,8 +5,7 @@ My first vanilla JavaScript project
 -----------
 
 The objective of this project was to create a responsive Single Page Application, while consuming an API.
-I had 2 weeks (the 2 final weeks of the year, admist Christmas and New Year) to write it from scratch.
-And I'm very proud of the outcome! :)
+I had 2 weeks (the 2 final weeks of the year, admist Christmas and New Year) to write it from scratch, and I'm very proud of the outcome! :)
 
 To access the page, please click on [THIS LINK](https://omdb-project.vercel.app/).
 
